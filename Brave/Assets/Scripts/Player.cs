@@ -59,4 +59,15 @@ public class Player : MonoBehaviour
             animator.SetBool("isJumping", true);
         }
     }
+
+    // Collision with the fence
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Fence")
+        {
+            Rigidbody rb = GetComponent<Rigidbody>();
+            Vector3 direção = collision.contacts[0].normal;
+            rb.AddForce(-direção * 400, ForceMode.Impulse);
+        }
+    }
 }
