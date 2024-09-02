@@ -8,6 +8,7 @@ public class Coins : MonoBehaviour
     public float rotationSpeed = 100f; 
     public float moveRange = 1f; 
     public Vector3 startPosition;
+    public AudioClip coinSound;
 
     // Start is called before the first frame update
     void Start()
@@ -28,8 +29,9 @@ public class Coins : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
-        {
+        { 
             Destroy(gameObject);
+            AudioSource.PlayClipAtPoint(coinSound, transform.position);
         }
     }
 }

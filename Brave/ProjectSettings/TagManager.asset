@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Fence
+  - Coin
+  - Water
   layers:
   - Default
   - TransparentFX

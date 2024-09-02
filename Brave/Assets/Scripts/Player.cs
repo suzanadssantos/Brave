@@ -11,12 +11,18 @@ public class Player : MonoBehaviour
     public float speedRotate = 25;
     public Animator animator;
     Rigidbody rb;
+    public AudioClip jumpSound;
+    private AudioSource jumpSource;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         jump = new Vector3(0.0f, 2.0f, 0.0f);
+
+        // Jump Sound
+        jumpSource = GetComponent<AudioSource>();  
+        jumpSource.clip = jumpSound;
     }
 
     void OnCollisionStay(){
@@ -56,18 +62,27 @@ public class Player : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && isGrounded){
             rb.AddForce(jump * jumpForce, ForceMode.Impulse);
             isGrounded = false;
+
             animator.SetBool("isJumping", true);
+
+            jumpSource.Play();
         }
     }
 
-    // Collision with the fence
     private void OnCollisionEnter(Collision collision)
     {
+        // Collision with the fence
         if (collision.gameObject.tag == "Fence")
         {
             Rigidbody rb = GetComponent<Rigidbody>();
             Vector3 direção = collision.contacts[0].normal;
-            rb.AddForce(-direção * 400, ForceMode.Impulse);
+            rb.AddForce(-direção * 100, ForceMode.Impulse);
+        }
+        
+        // Game over
+        if (collision.gameObject.tag == "Water")
+        { 
+            // ...
         }
     }
 }
