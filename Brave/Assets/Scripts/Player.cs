@@ -4,29 +4,26 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private Vector3 jump;
-    private float jumpForce = 25.0f;
-    public bool isGrounded;
-    public float speedWalk = 18;
-    public float speedRotate = 25;
+    private CharacterController controller;
     public Animator animator;
-    Rigidbody rb;
+
+    // Sounds
     public AudioClip jumpSound;
     private AudioSource jumpSource;
+    
+    public bool isGrounded;
+    public float jumpForce = 5f;
+    public float gravity = 9.81f;
+    private Vector3 velocity;
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        jump = new Vector3(0.0f, 2.0f, 0.0f);
+        controller = GetComponent<CharacterController>();
 
         // Jump Sound
         jumpSource = GetComponent<AudioSource>();  
         jumpSource.clip = jumpSound;
-    }
-
-    void OnCollisionStay(){
-        isGrounded = true;
     }
 
     // Update is called once per frame
@@ -34,51 +31,45 @@ public class Player : MonoBehaviour
     {
         MovePlayer();
         Jump();
-
-        // Walk animation
-        if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow)){
-          animator.SetBool("isWalking", true);  
-        }
-
-        if(Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow)){
-          animator.SetBool("isWalking", false);  
-        }
-
-        // Jump animation
-        if(Input.GetKeyUp(KeyCode.Space)){
-            animator.SetBool("isJumping", false);
-        }
     }
 
     private void MovePlayer(){
-        float forwardInput = Input.GetAxis("Vertical");
-        float rightInput = Input.GetAxis("Horizontal");
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
 
-        transform.Translate(speedWalk * forwardInput * Time.deltaTime * Vector3.forward);
-        transform.Rotate(speedRotate * rightInput * Time.deltaTime * Vector3.up);
+        Vector3 moving = new Vector3(horizontal, 0, vertical);
+        moving.y = 0;
+
+        controller.Move(moving * Time.deltaTime * 10);
+        controller.Move(new Vector3(0, -9.81f, 0) * Time.deltaTime);
+
+        if(moving != Vector3.zero){
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(moving), Time.deltaTime * 10);
+            animator.SetBool("isWalking", true);
+        }else{
+            animator.SetBool("isWalking", false);
+        }
     }
 
     private void Jump(){
-        if(Input.GetKeyDown(KeyCode.Space) && isGrounded){
-            rb.AddForce(jump * jumpForce, ForceMode.Impulse);
-            isGrounded = false;
-
+        if (Input.GetKeyDown(KeyCode.Space) && controller.isGrounded)
+        {
+            velocity.y = jumpForce;
             animator.SetBool("isJumping", true);
-
-            jumpSource.Play();
+            AudioSource.PlayClipAtPoint(jumpSound, transform.position);
+        }else{
+            animator.SetBool("isJumping", false);
         }
+
+        // Apply gravity
+        velocity.y -= gravity * Time.deltaTime;
+
+        // Move the character
+        controller.Move(velocity * Time.deltaTime);
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        // Collision with the fence
-        if (collision.gameObject.tag == "Fence")
-        {
-            Rigidbody rb = GetComponent<Rigidbody>();
-            Vector3 direção = collision.contacts[0].normal;
-            rb.AddForce(-direção * 100, ForceMode.Impulse);
-        }
-        
         // Game over
         if (collision.gameObject.tag == "Water")
         { 

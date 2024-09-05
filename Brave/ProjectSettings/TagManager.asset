@@ -7,6 +7,7 @@ TagManager:
   - Fence
   - Coin
   - Water
+  - Portal
   layers:
   - Default
   - TransparentFX
