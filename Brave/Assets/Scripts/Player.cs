@@ -68,12 +68,19 @@ public class Player : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    
+    private void OnTriggerEnter(Collider other)
     {
-        // Game over
-        if (collision.gameObject.tag == "Water")
+        // Game Over
+        if (other.tag == "Game Over")
         { 
-            // ...
+            gameObject.SetActive(false);
+        }
+
+        if (other.tag == "Treasure")
+        { 
+            Destroy(other.gameObject);
+            animator.SetBool("newLevel", true);
         }
     }
 }

@@ -8,6 +8,8 @@ TagManager:
   - Coin
   - Water
   - Portal
+  - Treasure
+  - Game Over
   layers:
   - Default
   - TransparentFX
