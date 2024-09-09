@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
         jumpSource.clip = jumpSound;
 
         // Life
-        lifeCount = 5;
+        lifeCount = 3;
         life.text = $" x{lifeCount}";
     }
 
@@ -74,7 +74,6 @@ public class Player : MonoBehaviour
             velocity.y = jumpForce;
             animator.SetBool("isJumping", true);
             AudioSource.PlayClipAtPoint(jumpSound, transform.position);
-            Debug.Log("jump");
         }else{
             animator.SetBool("isJumping", false);
         }
@@ -108,7 +107,7 @@ public class Player : MonoBehaviour
         }
         if (other.tag == "Water")
         { 
-            lifeCount--;
+            lifeCount = 0;
             life.text = $" 0{lifeCount}";
         }
 
