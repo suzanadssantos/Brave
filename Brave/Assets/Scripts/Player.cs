@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -16,6 +18,12 @@ public class Player : MonoBehaviour
     public float gravity = 9.81f;
     private Vector3 velocity;
 
+    // Life and coins
+    public TextMeshProUGUI life;
+    public int lifeCount;
+    public TextMeshProUGUI coins;
+    public int coinsCount = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +32,10 @@ public class Player : MonoBehaviour
         // Jump Sound
         jumpSource = GetComponent<AudioSource>();  
         jumpSource.clip = jumpSound;
+
+        // Life
+        lifeCount = 5;
+        life.text = $" x{lifeCount}";
     }
 
     // Update is called once per frame
@@ -31,6 +43,11 @@ public class Player : MonoBehaviour
     {
         MovePlayer();
         Jump();
+
+        //Game Over
+        if(lifeCount == 0){
+            animator.SetBool("isDead", true);
+        }
     }
 
     private void MovePlayer(){
@@ -57,6 +74,7 @@ public class Player : MonoBehaviour
             velocity.y = jumpForce;
             animator.SetBool("isJumping", true);
             AudioSource.PlayClipAtPoint(jumpSound, transform.position);
+            Debug.Log("jump");
         }else{
             animator.SetBool("isJumping", false);
         }
@@ -68,19 +86,37 @@ public class Player : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
     }
 
-    
     private void OnTriggerEnter(Collider other)
     {
-        // Game Over
-        if (other.tag == "Game Over")
+        // Coin
+        if (other.tag == "Coin")
         { 
-            gameObject.SetActive(false);
+            coinsCount++;
+            coins.text = $" 0{coinsCount}";
         }
 
+        // Hearts
+        if (other.tag == "Enemy")
+        { 
+            lifeCount--;
+            life.text = $" 0{lifeCount}";
+        }
+        if (other.tag == "Fire")
+        { 
+            lifeCount--;
+            life.text = $" 0{lifeCount}";
+        }
+        if (other.tag == "Water")
+        { 
+            lifeCount--;
+            life.text = $" 0{lifeCount}";
+        }
+
+        // New Level
         if (other.tag == "Treasure")
         { 
             Destroy(other.gameObject);
             animator.SetBool("newLevel", true);
-        }
+        } 
     }
 }

@@ -10,6 +10,8 @@ TagManager:
   - Portal
   - Treasure
   - Game Over
+  - Enemy
+  - Fire
   layers:
   - Default
   - TransparentFX

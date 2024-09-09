@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Level1Manager : MonoBehaviour
 {
@@ -8,12 +10,12 @@ public class Level1Manager : MonoBehaviour
     public float rotationSpeed = 100f; 
     public float moveRangeUp = 1f;
     public float moveRangeDown = 1f; 
+
+    // Platforms
     public GameObject[] platformsUp;
     public Vector3[] startPositionPlatformsUp;
     public GameObject[] platformsDown;
     public Vector3[] startPositionPlatformsDown;
-    private Vector3 startPosition;
-    public GameObject[] chestMonster;
 
     // Start is called before the first frame update
     void Start()
@@ -26,9 +28,6 @@ public class Level1Manager : MonoBehaviour
         for(int i = 0; i < platformsDown.Length; i++){
             startPositionPlatformsDown[i] = platformsDown[i].transform.position;
         }
-
-        // Chest Monster position
-        startPosition = chestMonster[0].transform.position;
     }
 
     // Update is called once per frame
@@ -44,9 +43,5 @@ public class Level1Manager : MonoBehaviour
             float newY = startPositionPlatformsDown[i].y + Mathf.Sin(Time.time * moveSpeed) * moveRangeDown;
             platformsDown[i].transform.position = new Vector3(platformsDown[i].transform.position.x, newY, platformsDown[i].transform.position.z);
         }
-
-        // Move the chest monsters
-        float z = Mathf.Sin(Time.time * 3f) * 1f;
-        chestMonster[0].transform.position = startPosition + new Vector3(0, 0, z);
     }
 }
