@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638609861116256791
-    m_Hash: 594698658
+      ticks: 638614993376333631
+    m_Hash: 1519068646
   m_LockFileStatus:
     m_FilePath: C:/Users/Suzana/OneDrive/Documentos/jogos/Brave/Brave/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638609861116461109
-    m_Hash: 970228368
+      ticks: 638614993376345224
+    m_Hash: 1501870857
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -295,10 +295,12 @@ m_ResolvedPackages:
     - 2.3.1
     - 2.4.3
     - 2.4.4
+    - 2.5.1
     compatible:
     - 2.3.1
     - 2.4.3
     - 2.4.4
+    - 2.5.1
     recommended: 2.3.1
     deprecated: []
   dependencies: []
