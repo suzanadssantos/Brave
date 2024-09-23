@@ -361,6 +361,7 @@
 "Assets/Scripts/CharacterSelectionMenu.cs"
 "Assets/Scripts/Coins.cs"
 "Assets/Scripts/FollowPlayer.cs"
+"Assets/Scripts/GameMusic.cs"
 "Assets/Scripts/Level1Manager.cs"
 "Assets/Scripts/MenuManager.cs"
 "Assets/Scripts/Player.cs"

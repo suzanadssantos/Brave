@@ -24,6 +24,10 @@ public class Player : MonoBehaviour
     public TextMeshProUGUI coins;
     public int coinsCount = 0;
 
+    public GameObject gameOver;
+
+    public AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -99,16 +103,19 @@ public class Player : MonoBehaviour
         { 
             lifeCount--;
             life.text = $" 0{lifeCount}";
+            LoseHeartSound();
         }
         if (other.tag == "Fire")
         { 
             lifeCount--;
             life.text = $" 0{lifeCount}";
+            LoseHeartSound();
         }
         if (other.tag == "Water")
         { 
             lifeCount = 0;
             life.text = $" 0{lifeCount}";
+            gameOver.SetActive(true);
         }
 
         // New Level
@@ -117,5 +124,15 @@ public class Player : MonoBehaviour
             Destroy(other.gameObject);
             animator.SetBool("newLevel", true);
         } 
+
+        // Game Over
+        if(lifeCount == 0){
+            gameOver.SetActive(true);
+        }
+    }
+
+    void LoseHeartSound()
+    {
+        audioSource.Play();
     }
 }
