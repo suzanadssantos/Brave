@@ -24,7 +24,9 @@ public class Player : MonoBehaviour
     public TextMeshProUGUI coins;
     public int coinsCount = 0;
 
+    // Game Over
     public GameObject gameOver;
+    public GameObject[] players;
 
     public AudioSource audioSource;
 
@@ -115,7 +117,6 @@ public class Player : MonoBehaviour
         { 
             lifeCount = 0;
             life.text = $" 0{lifeCount}";
-            gameOver.SetActive(true);
         }
 
         // New Level
@@ -127,6 +128,8 @@ public class Player : MonoBehaviour
 
         // Game Over
         if(lifeCount == 0){
+            players[0].SetActive(false);
+            players[1].SetActive(false);
             gameOver.SetActive(true);
         }
     }
