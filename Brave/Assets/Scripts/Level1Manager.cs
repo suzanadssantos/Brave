@@ -51,4 +51,8 @@ public class Level1Manager : MonoBehaviour
     public void QuitGame(){
         SceneManager.LoadScene(0);
     }
+
+    public void NextLevel(){
+        SceneManager.LoadScene(2);
+    }
 }

@@ -19,9 +19,9 @@ public class Player : MonoBehaviour
     private Vector3 velocity;
 
     // Life and coins
-    public TextMeshProUGUI life;
+    public TextMeshProUGUI[] life;
     public int lifeCount;
-    public TextMeshProUGUI coins;
+    public TextMeshProUGUI[] coins;
     public int coinsCount = 0;
 
     // Game Over
@@ -29,6 +29,9 @@ public class Player : MonoBehaviour
     public GameObject[] players;
 
     public AudioSource audioSource;
+
+    // Next Level
+    public GameObject nextLevel;
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +44,8 @@ public class Player : MonoBehaviour
 
         // Life
         lifeCount = 3;
-        life.text = $" x{lifeCount}";
+        life[0].text = $" x{lifeCount}";
+        life[1].text = $" x{lifeCount}";
     }
 
     // Update is called once per frame
@@ -97,33 +101,38 @@ public class Player : MonoBehaviour
         if (other.tag == "Coin")
         { 
             coinsCount++;
-            coins.text = $" 0{coinsCount}";
+            coins[0].text = $"{coinsCount}";
+            coins[1].text = $"{coinsCount}";
         }
 
         // Hearts
         if (other.tag == "Enemy")
         { 
             lifeCount--;
-            life.text = $" 0{lifeCount}";
+            life[0].text = $"0{lifeCount}";
+            life[1].text = $"0{lifeCount}";
             LoseHeartSound();
         }
         if (other.tag == "Fire")
         { 
             lifeCount--;
-            life.text = $" 0{lifeCount}";
+            life[0].text = $"0{lifeCount}";
+            life[1].text = $"0{lifeCount}";
             LoseHeartSound();
         }
         if (other.tag == "Water")
         { 
             lifeCount = 0;
-            life.text = $" 0{lifeCount}";
+            life[0].text = $"0{lifeCount}";
+            life[1].text = $"0{lifeCount}";
         }
 
-        // New Level
+        // Next Level
         if (other.tag == "Treasure")
         { 
             Destroy(other.gameObject);
             animator.SetBool("newLevel", true);
+            nextLevel.SetActive(true);
         } 
 
         // Game Over
