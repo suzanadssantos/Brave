@@ -12,6 +12,7 @@ TagManager:
   - Game Over
   - Enemy
   - Fire
+  - Ground
   layers:
   - Default
   - TransparentFX

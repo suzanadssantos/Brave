@@ -10,8 +10,9 @@ public class Player : MonoBehaviour
     public Animator animator;
 
     // Sounds
-    public AudioClip jumpSound;
-    private AudioSource jumpSource;
+    public AudioSource jumpSource;
+    public AudioSource loseHeartSource;
+    public AudioSource coinSource;
     
     public bool isGrounded;
     public float jumpForce = 5f;
@@ -28,8 +29,6 @@ public class Player : MonoBehaviour
     public GameObject gameOver;
     public GameObject[] players;
 
-    public AudioSource audioSource;
-
     // Next Level
     public GameObject nextLevel;
 
@@ -38,14 +37,10 @@ public class Player : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
 
-        // Jump Sound
-        jumpSource = GetComponent<AudioSource>();  
-        jumpSource.clip = jumpSound;
-
         // Life
         lifeCount = 3;
-        life[0].text = $" x{lifeCount}";
-        life[1].text = $" x{lifeCount}";
+        life[0].text = $"{lifeCount}";
+        life[1].text = $"{lifeCount}";
     }
 
     // Update is called once per frame
@@ -83,7 +78,7 @@ public class Player : MonoBehaviour
         {
             velocity.y = jumpForce;
             animator.SetBool("isJumping", true);
-            AudioSource.PlayClipAtPoint(jumpSound, transform.position);
+            jumpSource.Play();
         }else{
             animator.SetBool("isJumping", false);
         }
@@ -103,28 +98,35 @@ public class Player : MonoBehaviour
             coinsCount++;
             coins[0].text = $"{coinsCount}";
             coins[1].text = $"{coinsCount}";
+            coinSource.Play();
         }
 
         // Hearts
         if (other.tag == "Enemy")
         { 
             lifeCount--;
-            life[0].text = $"0{lifeCount}";
-            life[1].text = $"0{lifeCount}";
+            life[0].text = $"{lifeCount}";
+            life[1].text = $"{lifeCount}";
             LoseHeartSound();
         }
         if (other.tag == "Fire")
         { 
             lifeCount--;
-            life[0].text = $"0{lifeCount}";
-            life[1].text = $"0{lifeCount}";
+            life[0].text = $"{lifeCount}";
+            life[1].text = $"{lifeCount}";
             LoseHeartSound();
         }
         if (other.tag == "Water")
         { 
             lifeCount = 0;
-            life[0].text = $"0{lifeCount}";
-            life[1].text = $"0{lifeCount}";
+            life[0].text = $"{lifeCount}";
+            life[1].text = $"{lifeCount}";
+        }
+        if (other.tag == "Ground")
+        { 
+            lifeCount = 0;
+            life[0].text = $"{lifeCount}";
+            life[1].text = $"{lifeCount}";
         }
 
         // Next Level
@@ -145,6 +147,6 @@ public class Player : MonoBehaviour
 
     void LoseHeartSound()
     {
-        audioSource.Play();
+        loseHeartSource.Play();
     }
 }
