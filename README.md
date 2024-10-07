@@ -1,2 +1,2 @@
 # Brave
-A small 3D Platformer game
+A 3D Platformer game
