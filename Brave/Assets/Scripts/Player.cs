@@ -48,11 +48,6 @@ public class Player : MonoBehaviour
     {
         MovePlayer();
         Jump();
-
-        //Game Over
-        if(lifeCount == 0){
-            animator.SetBool("isDead", true);
-        }
     }
 
     private void MovePlayer(){
@@ -67,20 +62,20 @@ public class Player : MonoBehaviour
 
         if(moving != Vector3.zero){
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(moving), Time.deltaTime * 10);
-            animator.SetBool("isWalking", true);
+            animator.SetBool("walking", true);
         }else{
-            animator.SetBool("isWalking", false);
+            animator.SetBool("walking", false);
         }
     }
 
     private void Jump(){
-        if (Input.GetKeyDown(KeyCode.Space) && controller.isGrounded)
+        if (Input.GetKey(KeyCode.Space) && controller.isGrounded)
         {
             velocity.y = jumpForce;
-            animator.SetBool("isJumping", true);
             jumpSource.Play();
-        }else{
-            animator.SetBool("isJumping", false);
+            animator.SetBool("jumping", true);
+        }else if(Input.GetKeyUp(KeyCode.Space)){
+            animator.SetBool("jumping", false);
         }
 
         // Apply gravity
@@ -133,8 +128,6 @@ public class Player : MonoBehaviour
         if (other.tag == "Treasure")
         { 
             Destroy(other.gameObject);
-            animator.SetBool("newLevel", true);
-            nextLevel.SetActive(true);
         } 
 
         // Game Over

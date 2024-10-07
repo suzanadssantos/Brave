@@ -76,6 +76,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 077bc80b3a6b78d4cb0279e326917bf9, type: 2}
+    - target: {fileID: 9036980633323257398, guid: 2dfbb63c9cdf7504faf4ff26b0581598, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -106,7 +110,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 9147876973540787428}
   jumpSource: {fileID: 0}
-  audioSource: {fileID: 0}
+  loseHeartSource: {fileID: 0}
+  coinSource: {fileID: 0}
   isGrounded: 1
   jumpForce: 28
   gravity: 12.3
