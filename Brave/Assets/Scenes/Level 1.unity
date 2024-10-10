@@ -28239,6 +28239,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1615506597}
     - target: {fileID: 1568425890975482673, guid: 06fdfd3745840eb4bbfecbcbc4f4e642, type: 3}
+      propertyPath: jumpForce
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1568425890975482673, guid: 06fdfd3745840eb4bbfecbcbc4f4e642, type: 3}
       propertyPath: nextLevel
       value: 
       objectReference: {fileID: 3859393018101351455}
@@ -28886,6 +28890,10 @@ PrefabInstance:
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 1615506597}
+    - target: {fileID: 8599416712568833585, guid: ef67aee87e2f1ed4e99c3256e11ce880, type: 3}
+      propertyPath: jumpForce
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 8599416712568833585, guid: ef67aee87e2f1ed4e99c3256e11ce880, type: 3}
       propertyPath: nextLevel
       value: 

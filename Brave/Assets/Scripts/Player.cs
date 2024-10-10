@@ -128,6 +128,7 @@ public class Player : MonoBehaviour
         if (other.tag == "Treasure")
         { 
             Destroy(other.gameObject);
+            nextLevel.SetActive(true);
         } 
 
         // Game Over
