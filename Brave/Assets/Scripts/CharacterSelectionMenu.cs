@@ -11,18 +11,6 @@ public class CharacterSelectionMenu : MonoBehaviour
     public GameObject girl;
     public GameObject girlCamera;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void BoySelected(){
         characterSelection.SetActive(false);
         Panel.SetActive(false);

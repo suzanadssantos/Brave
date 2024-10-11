@@ -32,6 +32,18 @@ PrefabInstance:
       propertyPath: m_text
       value: Exit
       objectReference: {fileID: 0}
+    - target: {fileID: 2993543802056661167, guid: fdff865e11cce8042969c92ab724d025, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 96838370a4d6f694899328e90b0f2bfe, type: 2}
+    - target: {fileID: 2993543802056661167, guid: fdff865e11cce8042969c92ab724d025, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4250861913754956112, guid: 96838370a4d6f694899328e90b0f2bfe, type: 2}
+    - target: {fileID: 2993543802056661167, guid: fdff865e11cce8042969c92ab724d025, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3723312263332902002, guid: fdff865e11cce8042969c92ab724d025, type: 3}
       propertyPath: m_Name
       value: ExitButton

@@ -1,6 +1,8 @@
 Library\Bee\artifacts\mvdfrm\Unity.EditorCoroutines.Editor.ref.dll_34ED10A34098B2DB.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.InternalAPIEditorBridgeDev.001.ref.dll_E984A7896F18F703.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Performance.Profile-Analyzer.Editor.ref.dll_65A192712782EB2B.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.PlasticSCM.Editor.ref.dll_257AEB342BE77856.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Play.Publisher.Editor.ref.dll_EAD9EA318D2F5031.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.ProBuilder.AddOns.Editor.ref.dll_F524F8CE15EFFDA6.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.ProBuilder.AssetIdRemapUtility.ref.dll_A186D6143F9C679C.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.ProBuilder.Editor.ref.dll_E3AF217646286A75.mvfrm
@@ -108,4 +110,5 @@ Library\Bee\artifacts\mvdfrm\UnityEngine.VirtualTexturingModule.dll_6C7528A83A7D
 Library\Bee\artifacts\mvdfrm\UnityEngine.VRModule.dll_81F25E0743F1443C.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.WindModule.dll_45F2C1BDF59C94D8.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.XRModule.dll_B4B1210BCD2B919A.mvfrm
+Library\Bee\artifacts\mvdfrm\UnityEditor.iOS.Extensions.Xcode.dll_903DEC5FCC9F97DA.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.Antlr3.Runtime.dll_FBC62C826EB2B4B0.mvfrm

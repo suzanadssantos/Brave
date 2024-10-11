@@ -67,7 +67,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Game Over
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 868c291f71c56c247a9da5ead7896b73, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 96838370a4d6f694899328e90b0f2bfe, type: 2}
   m_sharedMaterial: {fileID: 6681778506668645393, guid: 868c291f71c56c247a9da5ead7896b73, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 126.19516, w: 34.105793}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1811000180302523780
@@ -229,8 +229,16 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2993543802056661167, guid: fdff865e11cce8042969c92ab724d025, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 96838370a4d6f694899328e90b0f2bfe, type: 2}
+    - target: {fileID: 2993543802056661167, guid: fdff865e11cce8042969c92ab724d025, type: 3}
       propertyPath: m_fontSizeBase
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2993543802056661167, guid: fdff865e11cce8042969c92ab724d025, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3723312263332902002, guid: fdff865e11cce8042969c92ab724d025, type: 3}
       propertyPath: m_Name
@@ -351,8 +359,16 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2993543802056661167, guid: fdff865e11cce8042969c92ab724d025, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 96838370a4d6f694899328e90b0f2bfe, type: 2}
+    - target: {fileID: 2993543802056661167, guid: fdff865e11cce8042969c92ab724d025, type: 3}
       propertyPath: m_fontSizeBase
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2993543802056661167, guid: fdff865e11cce8042969c92ab724d025, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3723312263332902002, guid: fdff865e11cce8042969c92ab724d025, type: 3}
       propertyPath: m_Name

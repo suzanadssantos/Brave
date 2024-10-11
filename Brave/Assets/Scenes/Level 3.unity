@@ -30491,6 +30491,10 @@ PrefabInstance:
       propertyPath: m_HorizontalAlignment
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1421629940460095588, guid: 584fa9ed6df91b64b80b7846f9c83f92, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1998052923960244683, guid: 584fa9ed6df91b64b80b7846f9c83f92, type: 3}
       propertyPath: buttonSource
       value: 
@@ -30591,6 +30595,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3440055771511757928, guid: 584fa9ed6df91b64b80b7846f9c83f92, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4040625901284283847, guid: 584fa9ed6df91b64b80b7846f9c83f92, type: 3}
       propertyPath: m_text
       value: End Game
@@ -30602,6 +30610,10 @@ PrefabInstance:
     - target: {fileID: 8104917533042105182, guid: 584fa9ed6df91b64b80b7846f9c83f92, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 56.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8872848733893716262, guid: 584fa9ed6df91b64b80b7846f9c83f92, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9066856635529358169, guid: 584fa9ed6df91b64b80b7846f9c83f92, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -46467,6 +46479,10 @@ PrefabInstance:
     - target: {fileID: 3872914992912531954, guid: 11dbc75633ccce94e80a9f8c848210e9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6410166726024814409, guid: 11dbc75633ccce94e80a9f8c848210e9, type: 3}
+      propertyPath: m_Volume
+      value: 0.26
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
