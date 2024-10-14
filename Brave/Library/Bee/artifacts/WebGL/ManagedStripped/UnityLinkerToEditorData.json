@@ -207,12 +207,6 @@
             "icon": null
           },
           {
-            "name": "FlareLayer",
-            "scenes": [],
-            "dependencyType": 0,
-            "icon": null
-          },
-          {
             "name": "GameManager",
             "scenes": [],
             "dependencyType": 1,
@@ -430,9 +424,7 @@
           },
           {
             "name": "ReflectionProbe",
-            "scenes": [
-              "Assets/Scenes/Level 1.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
@@ -496,12 +488,6 @@
               "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
-            "dependencyType": 0,
-            "icon": null
-          },
-          {
-            "name": "Skybox",
-            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },

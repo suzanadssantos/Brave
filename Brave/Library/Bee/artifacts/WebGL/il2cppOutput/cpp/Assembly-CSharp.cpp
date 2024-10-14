@@ -3001,12 +3001,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Magnitude_m21652D95
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Button_Start_m2D250D21BF475775E879DEC6B631016C2F1D98AA (Button_t08E85812946542C2FD1F37BA7C97825101832DC8* __this, const RuntimeMethod* method) 
-{
-	{
-		return;
-	}
-}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Button_Update_m09AD64D785E4E8C6680ABC33917D4079BE9F173F (Button_t08E85812946542C2FD1F37BA7C97825101832DC8* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3049,18 +3043,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Button__ctor_m6CC103D3CBE7ABCDC685DCC02F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterSelectionMenu_Start_m57D1B45AACD4E5EF6A00D992E12D2D64AA26BFEF (CharacterSelectionMenu_t99C4706C614B691874F8284446A55CDA3FCABD72* __this, const RuntimeMethod* method) 
-{
-	{
-		return;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterSelectionMenu_Update_m69C0A7D1051688000028F323AAA6DC5BA337BDFC (CharacterSelectionMenu_t99C4706C614B691874F8284446A55CDA3FCABD72* __this, const RuntimeMethod* method) 
-{
-	{
-		return;
-	}
-}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharacterSelectionMenu_BoySelected_m4665AD25FA546828032F7950BBC80D9E0552C728 (CharacterSelectionMenu_t99C4706C614B691874F8284446A55CDA3FCABD72* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3302,18 +3284,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameMusic__ctor_mA232628B26BE1B4C9FD0B6A
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelManager_Start_mA7A45D9D0CBA8784B87F70B204C19A2AAC234D42 (LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530* __this, const RuntimeMethod* method) 
-{
-	{
-		return;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelManager_Update_mD2004B9E4119DF7C3EE3D3F147754CCBC7FFD61D (LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530* __this, const RuntimeMethod* method) 
-{
-	{
-		return;
-	}
-}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelManager_BoySelected_mE84ED2389C4B34801A7AB65932706217E8DF2460 (LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530* __this, const RuntimeMethod* method) 
 {
 	{

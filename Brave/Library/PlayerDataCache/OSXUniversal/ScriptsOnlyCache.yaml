@@ -1,7 +1,6 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - AQUAS_Lite.AQUAS_Lite_Reflection
     - Button
     - Coins
     - FollowPlayer
@@ -73,12 +72,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Navigation
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: Assembly-CSharp
-    fullTypeName: MenuManager
-    methodName: ExitButton
   - assembly: Assembly-CSharp
     fullTypeName: MenuManager
     methodName: StartButton
@@ -88,6 +81,9 @@ ScriptsOnlyBuild:
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuManager
+    methodName: ExitButton
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -108,10 +104,34 @@ ScriptsOnlyBuild:
     methodName: QuitGame
   - assembly: Assembly-CSharp
     fullTypeName: LevelManager
+    methodName: QuitGame
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelManager
+    methodName: TryAgain
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelManager
     methodName: GirlSelected
   - assembly: Assembly-CSharp
     fullTypeName: LevelManager
     methodName: BoySelected
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelManager
+    methodName: NextLevel
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelManager
+    methodName: GirlSelected
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelManager
+    methodName: BoySelected
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelManager
+    methodName: QuitGame
   - assembly: Assembly-CSharp
     fullTypeName: LevelManager
     methodName: QuitGame
@@ -121,12 +141,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: LevelManager
     methodName: NextLevel
-  - assembly: Assembly-CSharp
-    fullTypeName: LevelManager
-    methodName: QuitGame
-  - assembly: Assembly-CSharp
-    fullTypeName: LevelManager
-    methodName: TryAgain
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -136,30 +153,12 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: LevelManager
     methodName: BoySelected
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: Assembly-CSharp
-    fullTypeName: LevelManager
-    methodName: QuitGame
-  - assembly: Assembly-CSharp
-    fullTypeName: LevelManager
-    methodName: NextLevel
   - assembly: Assembly-CSharp
     fullTypeName: LevelManager
     methodName: QuitGame
   - assembly: Assembly-CSharp
     fullTypeName: LevelManager
     methodName: TryAgain
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: Assembly-CSharp
-    fullTypeName: LevelManager
-    methodName: GirlSelected
-  - assembly: Assembly-CSharp
-    fullTypeName: LevelManager
-    methodName: BoySelected
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -215,31 +214,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1624}
     - Class: 114
-      Script: {instanceID: 1626}
+      Script: {instanceID: 2810}
     - Class: 114
-      Script: {instanceID: 1850}
+      Script: {instanceID: 3038}
     - Class: 114
-      Script: {instanceID: 2814}
+      Script: {instanceID: 3212}
     - Class: 114
-      Script: {instanceID: 3042}
+      Script: {instanceID: 3378}
     - Class: 114
-      Script: {instanceID: 3216}
+      Script: {instanceID: 5620}
     - Class: 114
-      Script: {instanceID: 5636}
+      Script: {instanceID: 5862}
     - Class: 114
-      Script: {instanceID: 5878}
+      Script: {instanceID: 5928}
     - Class: 114
-      Script: {instanceID: 5946}
+      Script: {instanceID: 6262}
     - Class: 114
-      Script: {instanceID: 6282}
+      Script: {instanceID: 6450}
     - Class: 114
-      Script: {instanceID: 6474}
+      Script: {instanceID: 6820}
     - Class: 114
-      Script: {instanceID: 6850}
+      Script: {instanceID: 7446}
     - Class: 114
-      Script: {instanceID: 7478}
-    - Class: 114
-      Script: {instanceID: 8324}
+      Script: {instanceID: 8288}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -259,8 +256,6 @@ ScriptsOnlyBuild:
     - Class: 205
       Script: {instanceID: 0}
     - Class: 213
-      Script: {instanceID: 0}
-    - Class: 215
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -316,29 +311,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1624}
     - Class: 114
-      Script: {instanceID: 1626}
+      Script: {instanceID: 2810}
     - Class: 114
-      Script: {instanceID: 2814}
+      Script: {instanceID: 3038}
     - Class: 114
-      Script: {instanceID: 3042}
+      Script: {instanceID: 3212}
     - Class: 114
-      Script: {instanceID: 3216}
+      Script: {instanceID: 3378}
     - Class: 114
-      Script: {instanceID: 5636}
+      Script: {instanceID: 5620}
     - Class: 114
-      Script: {instanceID: 5878}
+      Script: {instanceID: 5862}
     - Class: 114
-      Script: {instanceID: 5946}
+      Script: {instanceID: 5928}
     - Class: 114
-      Script: {instanceID: 6282}
+      Script: {instanceID: 6262}
     - Class: 114
-      Script: {instanceID: 6474}
+      Script: {instanceID: 6450}
     - Class: 114
-      Script: {instanceID: 6850}
+      Script: {instanceID: 6820}
     - Class: 114
-      Script: {instanceID: 7478}
+      Script: {instanceID: 7446}
     - Class: 114
-      Script: {instanceID: 8324}
+      Script: {instanceID: 8288}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -411,29 +406,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1624}
     - Class: 114
-      Script: {instanceID: 1626}
+      Script: {instanceID: 2810}
     - Class: 114
-      Script: {instanceID: 2814}
+      Script: {instanceID: 3038}
     - Class: 114
-      Script: {instanceID: 3042}
+      Script: {instanceID: 3212}
     - Class: 114
-      Script: {instanceID: 3216}
+      Script: {instanceID: 3378}
     - Class: 114
-      Script: {instanceID: 5636}
+      Script: {instanceID: 5620}
     - Class: 114
-      Script: {instanceID: 5878}
+      Script: {instanceID: 5862}
     - Class: 114
-      Script: {instanceID: 5946}
+      Script: {instanceID: 5928}
     - Class: 114
-      Script: {instanceID: 6282}
+      Script: {instanceID: 6262}
     - Class: 114
-      Script: {instanceID: 6474}
+      Script: {instanceID: 6450}
     - Class: 114
-      Script: {instanceID: 6850}
+      Script: {instanceID: 6820}
     - Class: 114
-      Script: {instanceID: 7478}
+      Script: {instanceID: 7446}
     - Class: 114
-      Script: {instanceID: 8324}
+      Script: {instanceID: 8288}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -506,33 +501,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1624}
     - Class: 114
-      Script: {instanceID: 1626}
+      Script: {instanceID: 2352}
     - Class: 114
-      Script: {instanceID: 2356}
+      Script: {instanceID: 2488}
     - Class: 114
-      Script: {instanceID: 2492}
+      Script: {instanceID: 2810}
     - Class: 114
-      Script: {instanceID: 2814}
+      Script: {instanceID: 3038}
     - Class: 114
-      Script: {instanceID: 3042}
+      Script: {instanceID: 3378}
     - Class: 114
-      Script: {instanceID: 4094}
+      Script: {instanceID: 4088}
     - Class: 114
-      Script: {instanceID: 4514}
+      Script: {instanceID: 4506}
     - Class: 114
-      Script: {instanceID: 4810}
+      Script: {instanceID: 4796}
     - Class: 114
-      Script: {instanceID: 5636}
+      Script: {instanceID: 5620}
     - Class: 114
-      Script: {instanceID: 5696}
+      Script: {instanceID: 5680}
     - Class: 114
-      Script: {instanceID: 6282}
+      Script: {instanceID: 6262}
     - Class: 114
-      Script: {instanceID: 6474}
+      Script: {instanceID: 6450}
     - Class: 114
-      Script: {instanceID: 6850}
+      Script: {instanceID: 6820}
     - Class: 114
-      Script: {instanceID: 8324}
+      Script: {instanceID: 8288}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -552,12 +547,6 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
-  - hash:
-      serializedVersion: 2
-      Hash: 915204dac8acad99f076d6e72ada0a0f
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: Button
   - hash:
       serializedVersion: 2
       Hash: dd9dda1dfd39e605c49e72003342ef5d
@@ -606,12 +595,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Selectable
-  - hash:
-      serializedVersion: 2
-      Hash: 9c80c580f09fa6a1a9bf272b53091d6f
-    assemblyName: Assembly-CSharp
-    namespaceName: AQUAS_Lite
-    className: AQUAS_Lite_Reflection
   - hash:
       serializedVersion: 2
       Hash: 079f8bbb032c5137806627bae6787f1f
@@ -896,6 +879,12 @@ ScriptsOnlyBuild:
     className: CinemachineMixingCamera
   - hash:
       serializedVersion: 2
+      Hash: 915204dac8acad99f076d6e72ada0a0f
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: Button
+  - hash:
+      serializedVersion: 2
       Hash: d90629714fa6b0145fcaffc87f5c6559
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -966,12 +955,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: PlayerQuitHandler
-  - hash:
-      serializedVersion: 2
-      Hash: 5a428a71303396203c3ad211ab31cb24
-    assemblyName: Assembly-CSharp
-    namespaceName: AQUAS_Lite
-    className: AQUAS_Lite_Camera
   - hash:
       serializedVersion: 2
       Hash: cf32d98954e63b8e30e9334b152e9b8e
@@ -1476,12 +1459,6 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine
     namespaceName: Cinemachine
     className: CinemachineConfiner2D
-  - hash:
-      serializedVersion: 2
-      Hash: 81c07299fe753ff82fd8b82de37a0ad2
-    assemblyName: Assembly-CSharp
-    namespaceName: AQUAS_Lite
-    className: AQUAS_Lite_CamNav
   - hash:
       serializedVersion: 2
       Hash: ef38c1407dba8c1f5d69f5db61a694fe
