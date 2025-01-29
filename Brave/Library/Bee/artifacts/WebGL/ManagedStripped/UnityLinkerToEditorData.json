@@ -7,9 +7,6 @@
           {
             "name": "AnimationClip",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -18,9 +15,6 @@
           {
             "name": "Animator",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -29,9 +23,6 @@
           {
             "name": "AnimatorController",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 1,
@@ -46,9 +37,6 @@
           {
             "name": "Avatar",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -74,9 +62,6 @@
           {
             "name": "AudioBehaviour",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -85,9 +70,6 @@
           {
             "name": "AudioClip",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -96,9 +78,6 @@
           {
             "name": "AudioListener",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -113,9 +92,6 @@
           {
             "name": "AudioSource",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -124,9 +100,6 @@
           {
             "name": "SampleClip",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 1,
@@ -152,9 +125,6 @@
           {
             "name": "Camera",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -175,9 +145,6 @@
           {
             "name": "Cubemap",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -198,9 +165,6 @@
           {
             "name": "EditorExtension",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 1,
@@ -215,9 +179,6 @@
           {
             "name": "GameObject",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -242,21 +203,8 @@
             "icon": null
           },
           {
-            "name": "LODGroup",
-            "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity"
-            ],
-            "dependencyType": 0,
-            "icon": null
-          },
-          {
             "name": "LevelGameManager",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 1,
@@ -265,9 +213,6 @@
           {
             "name": "Light",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -275,24 +220,21 @@
           },
           {
             "name": "LightProbes",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Menu.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "LightingSettings",
-            "scenes": [
-              "Assets/Scenes/Level 1.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "LightmapSettings",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -307,9 +249,6 @@
           {
             "name": "Material",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -318,9 +257,6 @@
           {
             "name": "Mesh",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -329,9 +265,6 @@
           {
             "name": "MeshFilter",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -340,9 +273,6 @@
           {
             "name": "MeshRenderer",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -351,9 +281,6 @@
           {
             "name": "MonoBehaviour",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -368,9 +295,6 @@
           {
             "name": "MonoScript",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 1,
@@ -379,9 +303,6 @@
           {
             "name": "NamedObject",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 1,
@@ -414,9 +335,6 @@
           {
             "name": "RectTransform",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -431,9 +349,6 @@
           {
             "name": "RenderSettings",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -466,9 +381,6 @@
           {
             "name": "Shader",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -483,9 +395,6 @@
           {
             "name": "SkinnedMeshRenderer",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -500,9 +409,6 @@
           {
             "name": "Sprite",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -597,12 +503,6 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.jsonserialize"
-          },
-          {
-            "name": "Required by ParticleSystem Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.particlesystem"
           },
           {
             "name": "Required by Physics Module",
@@ -700,65 +600,25 @@
         ]
       },
       {
-        "name": "ParticleSystem",
-        "dependencies": [
-          {
-            "name": "ParticleSystem",
-            "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity"
-            ],
-            "dependencyType": 0,
-            "icon": null
-          },
-          {
-            "name": "ParticleSystemRenderer",
-            "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity"
-            ],
-            "dependencyType": 0,
-            "icon": null
-          }
-        ]
-      },
-      {
         "name": "Physics",
         "dependencies": [
           {
-            "name": "BoxCollider",
-            "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity"
-            ],
-            "dependencyType": 0,
-            "icon": null
-          },
-          {
             "name": "CharacterController",
-            "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity"
-            ],
+            "scenes": [],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "Collider",
-            "scenes": [],
-            "dependencyType": 1,
+            "scenes": [
+              "Assets/Scenes/Menu.unity"
+            ],
+            "dependencyType": 0,
             "icon": null
           },
           {
             "name": "MeshCollider",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -768,14 +628,6 @@
             "name": "PhysicsManager",
             "scenes": [],
             "dependencyType": 1,
-            "icon": null
-          },
-          {
-            "name": "Rigidbody",
-            "scenes": [
-              "Assets/Scenes/Level 1.unity"
-            ],
-            "dependencyType": 0,
             "icon": null
           }
         ]
@@ -829,12 +681,6 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.jsonserialize"
-          },
-          {
-            "name": "Required by ParticleSystem Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.particlesystem"
           },
           {
             "name": "Required by Physics Module",
@@ -926,9 +772,6 @@
           {
             "name": "Font",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -972,9 +815,6 @@
           {
             "name": "Canvas",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,
@@ -989,9 +829,6 @@
           {
             "name": "CanvasRenderer",
             "scenes": [
-              "Assets/Scenes/Level 1.unity",
-              "Assets/Scenes/Level 2.unity",
-              "Assets/Scenes/Level 3.unity",
               "Assets/Scenes/Menu.unity"
             ],
             "dependencyType": 0,

@@ -96,7 +96,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: cb14ac40dcaf9d94a8ba31475ef83219, type: 2}
   m_LightingSettings: {fileID: 132831151}
 --- !u!196 &4
 NavMeshSettings:
@@ -28072,6 +28072,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CharacterSelectionMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 6158454353491115792, guid: 615516d455bd7c541bfdcf437dc72df9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6261181229561771983, guid: 615516d455bd7c541bfdcf437dc72df9, type: 3}
       propertyPath: buttonSource
       value: 
@@ -28092,6 +28096,10 @@ PrefabInstance:
     - target: {fileID: 2976270114465382673, guid: 598944fd54a8e654a87a99e6daf94fd0, type: 3}
       propertyPath: m_Name
       value: CharacterSelectionMenuBackground
+      objectReference: {fileID: 0}
+    - target: {fileID: 2976270114465382673, guid: 598944fd54a8e654a87a99e6daf94fd0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6500151400660980317, guid: 598944fd54a8e654a87a99e6daf94fd0, type: 3}
       propertyPath: m_Pivot.x
@@ -29309,6 +29317,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 998352426}
     m_Modifications:
+    - target: {fileID: 1627345778720022127, guid: 42cc9ecd9b756404fb1ae8e3df43515f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2029250241953336043, guid: 42cc9ecd9b756404fb1ae8e3df43515f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -29335,11 +29347,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2029250241953336043, guid: 42cc9ecd9b756404fb1ae8e3df43515f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 346.0688
+      value: 321.4782
       objectReference: {fileID: 0}
     - target: {fileID: 2029250241953336043, guid: 42cc9ecd9b756404fb1ae8e3df43515f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 282.19
+      value: 215.7643
       objectReference: {fileID: 0}
     - target: {fileID: 2029250241953336043, guid: 42cc9ecd9b756404fb1ae8e3df43515f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29371,11 +29383,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2029250241953336043, guid: 42cc9ecd9b756404fb1ae8e3df43515f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -6
+      value: 6.2953
       objectReference: {fileID: 0}
     - target: {fileID: 2029250241953336043, guid: 42cc9ecd9b756404fb1ae8e3df43515f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -8
+      value: 25.2128
       objectReference: {fileID: 0}
     - target: {fileID: 2029250241953336043, guid: 42cc9ecd9b756404fb1ae8e3df43515f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -29393,10 +29405,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExitGameOption
       objectReference: {fileID: 0}
+    - target: {fileID: 2319145186528757319, guid: 42cc9ecd9b756404fb1ae8e3df43515f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2978069339469126075, guid: 42cc9ecd9b756404fb1ae8e3df43515f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -65.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2978069339469126075, guid: 42cc9ecd9b756404fb1ae8e3df43515f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -30.3
+      objectReference: {fileID: 0}
     - target: {fileID: 3394654142163066558, guid: 42cc9ecd9b756404fb1ae8e3df43515f, type: 3}
       propertyPath: buttonSource
       value: 
       objectReference: {fileID: 8027777714367634916}
+    - target: {fileID: 5231631243627769478, guid: 42cc9ecd9b756404fb1ae8e3df43515f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8147919150193454679, guid: 42cc9ecd9b756404fb1ae8e3df43515f, type: 3}
       propertyPath: buttonSource
       value: 
@@ -29412,6 +29440,22 @@ PrefabInstance:
     - target: {fileID: 8503717120851667212, guid: 42cc9ecd9b756404fb1ae8e3df43515f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: LevelManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8600530525101762898, guid: 42cc9ecd9b756404fb1ae8e3df43515f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 74
+      objectReference: {fileID: 0}
+    - target: {fileID: 8600530525101762898, guid: 42cc9ecd9b756404fb1ae8e3df43515f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -30.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9118033332540011778, guid: 42cc9ecd9b756404fb1ae8e3df43515f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 10.797
+      objectReference: {fileID: 0}
+    - target: {fileID: 9118033332540011778, guid: 42cc9ecd9b756404fb1ae8e3df43515f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 58
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
